@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@android:color/black" />
+
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:fontFamily="@font/yanolja"
+                android:textSize="30dp"
+                android:text="드림 의원" />
+
+            <ImageButton
+                android:id="@+id/btn_empty"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/empty"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_fill"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/fill"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:visibility="gone"/>
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/listicon"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="약국 안내 / 위치"
+                    android:fontFamily="@font/yanolja"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:text="위치 : " />
+
+                <TextView
+                    android:id="@+id/hpLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/yanolja"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_margin="3dp" />
+
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_margin="10dp"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:context=".info_hospital" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hpMapimg_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="간이약도 : "
+                    android:fontFamily="@font/yanolja"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/hpMapimgText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:fontFamily="@font/yanolja"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:text="간이약도"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hpTel1Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/yanolja"
+                    android:lineHeight="30dp"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/listicon"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/tv_title_near_medi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="근처 병원"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/yanolja"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nearMedi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yanolja"
+                android:textColor="#000000"
+                android:text="센텀프라임의원 / 박종권신경정신과의원 "
+                android:textSize="20dp"
+                android:layout_margin="20dp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:id="@+id/btn_question"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="177dp"
+                    android:background="@drawable/reservation"
+                    android:fontFamily="@font/yanolja"
+                    android:onClick="onClick_question"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_question"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="157dp"
+                    android:background="#00ff0000"
+                    android:fontFamily="@font/yanolja"
+                    android:onClick="onClick_question"
+                    android:text="문의"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

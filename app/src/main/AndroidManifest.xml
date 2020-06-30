@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mecheduler">
+
+    <!-- 인터넷 권한 선언-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/phoneicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/phoneicon"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDuXkwa8umogQ5-egYP1oNCFgFDzF81ZX8"/>
+
+
+        <activity android:name=".LogInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".info_hospital"/>
+
+
+        <activity android:name=".mypage"/>
+        <activity android:name=".updateMyInfoActivity"/>
+
+        <activity
+            android:name=".tab_status_cancel"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            tools:targetApi="ice_cream_sandwich"></activity>
+
+        <activity
+            android:name=".menu_status_cancel"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            tools:targetApi="ice_cream_sandwich"></activity>
+
+        <activity
+            android:name=".tab_guide"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            tools:targetApi="ice_cream_sandwich"></activity>
+
+        <activity
+            android:name=".menu_search_list"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            tools:targetApi="ice_cream_sandwich"></activity>
+
+        <activity android:name=".menu_appointment"/>
+        <activity android:name=".menu_prescription"/>
+
+        <activity android:name=".menu_status"/>
+
+        <activity android:name=".menu_self"/>
+        <activity android:name=".info_medicine"/>
+
+
+        <activity android:name=".menu_search_for_list_old"/>
+
+        <activity android:name=".info_pharmacy"/>
+
+
+        <activity android:name=".SignUpActivity"/>
+
+        <activity android:name=".FindInfoActivity"/>
+
+        <activity android:name=".appointment_search_old"/>
+
+        <activity android:name=".head"/>
+
+        <activity android:name=".head_1"/>
+
+        <activity android:name=".head_2"/>
+
+        <activity android:name=".head_3"/>
+
+        <activity android:name=".head_4"/>
+
+        <activity android:name=".neck"/>
+
+        <activity android:name=".neck_1"/>
+
+        <activity android:name=".neck_2"/>
+
+        <activity android:name=".neck_3"/>
+
+        <activity android:name=".neck_4"/>
+
+        <activity android:name=".shoulder"/>
+
+        <activity android:name=".shoulder_1"/>
+        <activity android:name=".shoulder_2"/>
+        <activity android:name=".shoulder_3"/>
+
+        <activity android:name=".body"/>
+
+        <activity android:name=".body_1"/>
+
+        <activity android:name=".body_2"/>
+
+        <activity android:name=".body_3"/>
+
+        <activity android:name=".waist"/>
+
+        <activity android:name=".waist_1"/>
+
+        <activity android:name=".waist_2"/>
+
+        <activity android:name=".waist_3"/>
+
+        <activity android:name=".waist_4"/>
+
+        <activity android:name=".waist_5"/>
+
+        <activity android:name=".knee"/>
+
+        <activity android:name=".knee_1"/>
+
+        <activity android:name=".knee_2"/>
+        <activity android:name=".knee_3"/>
+
+        <activity android:name=".knee_4"/>
+
+        <activity android:name=".knee_5"/>
+
+        <activity android:name=".knee_6"/>
+
+        <activity android:name=".knee_7"/>
+
+        <activity android:name=".knee_8"/>
+
+        <activity android:name=".wrist"/>
+
+        <activity android:name=".wrist_1"/>
+        <activity android:name=".wrist_2"/>
+
+        <activity android:name=".wrist_3"/>
+
+        <activity android:name=".wrist_4"/>
+
+        <activity android:name=".more"/>
+
+        <activity android:name=".more_1"/>
+
+        <activity android:name=".test"/>
+        <activity android:name=".FindInfoSuccessActivity"/>
+        <activity android:name=".reservation_page"/>
+
+    </application>
+
+</manifest>

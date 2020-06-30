@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/toolbar"
+                android:background="@android:color/black" />
+
+            <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="머리 / 얼굴 통증" />
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/head_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="#00ff0000"
+            android:gravity="left"
+            android:text="1. 두통이 있고, 뒷골이 당기는 것 같아요. 심할 때는 눈이 빠지는 것 같이 아플 때도 있습니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/head_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="#00ff0000"
+            android:gravity="left"
+            android:text="2. 양치를 할 때, 음식을 씹을 때 입 속 얼굴에 전기가 흐르는 듯한 극심한 통증이 있습니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/head_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="#00ff0000"
+            android:gravity="left"
+            android:text="3. 머리 한쪽에 심한 두통이 있을 때면, 속이 메슥껍고 어둡고 조용한 곳에 숨고 싶어집니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/head_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="#00ff0000"
+            android:gravity="left"
+            android:text="4. 이유 없이 눈두덩 위로, 때로는 두피까지 가렵고 따끔거리는 통증이 생겼습니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@android:color/black" />
+
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="몸 통증" />
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/body_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left"
+        android:text="1. 심한 통증이 있다가 며칠 지나 피부에 붉은 반점과 수포가 생기고 가려워요"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:background="#00ff0000" />
+
+    <Button
+        android:id="@+id/body_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left"
+        android:text="2. 몸을 움직일 때마다 가끔씩 찌릿하고 뜨끔거리는 통증이 옆구리나 가슴 앞쪽에서 느껴집니다."
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:background="#00ff0000" />
+
+    <Button
+        android:id="@+id/body_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left"
+        android:text="3. 몸통을 어디에 부딪치고 나서부터 웃거나 기침할 때 갈비뼈 부위가 아파요"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:background="#00ff0000" />
+</LinearLayout>

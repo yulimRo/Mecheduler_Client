@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/yanolja"
+        android:text="진료 예약 취소"
+        android:textColor="@color/colorAccent"
+        android:textSize="45dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_round_main"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/yanolja"
+                android:text="병원명"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/confirmhp"
+                android:layout_width="200dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/yanolja"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/yanolja"
+                android:text="진료 희망 선생님"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/confirmDoctor"
+                android:layout_width="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/yanolja"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/yanolja"
+                android:text="진료 희망 날짜"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/confirmDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/yanolja"
+                android:text="날짜 선택"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/yanolja"
+                android:text="희망 진료 시간"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/confirmTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/yanolja"
+                android:text="진료선택"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/yanolja"
+                android:text="희망 진료 과목"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/confirmSubject"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/yanolja"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/yanolja"
+                android:text="진료 예약자"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/sub_who"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/yanolja"
+                android:text="병원예약"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_row="6"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/yanolja"
+                android:text="진료 예약 상태"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/confirmStateTv"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/yanolja"
+                android:text="예약접수"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예약 취소"
+        android:id="@+id/rescanclebtn"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:textColor="#ffff"
+        android:fontFamily="@font/yanolja"
+        android:padding="20dp"
+        android:textSize="25dp"
+        android:background="@drawable/edit_round_main_full2"/>
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/toolbar"
+                android:background="@android:color/black" />
+
+            <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="머리 / 얼굴 통증" />
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/head_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="4. 이유 없이 눈두덩 위로, 때로는 두피까지 가렵고 따끔거리는 통증이 생겼습니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="예상원인"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="눈썹위부터 정수리까지 얼굴의 반쪽만 통증과 가려움이 있다면 삼차신경을 침범한 대상포진을 의심해보아야 합니다. 물집이 잡히고 나면 큰 어려움 없이 대상포진 진단이 가능하나 그 전에는 원인을 찾지 못해 신경과 등을 전전하며 치료가 지연될 수 있으므로 주의해야 합니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="주의 사항"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="대상포진은 수포가 발생한지 72시간 이내에 적절한 신경치료를 하지 않으면 대상포진후 신경통이라는 만성통증으로 발전할 수 있으므로, 대상포진 신경통을 전문적으로 다루는 병원을 꼭 방문하셔야합니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="감별 진단"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="일자목(거북목)증후군, 경추간판탈출증(목디스크), 후관절 증후군, 근근막통증, 후두 신경통(후두통), 만성두통, 편두통, 긴장성 두통"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/head_4" />
+    </LinearLayout>
+</ScrollView>

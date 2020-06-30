@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#0067a3</color>
+    <color name="color_white">#ffffff</color>
+    <color name="sky_color">#1592Ec</color>
+    <color name="point_color">#ec5dbc</color>
+    <color name="gray_color">#5f5e60</color>
+    <color name="green_color">#138c37</color>
+    <color name="red_color">#b00004</color>
+    <color name="ph_color">#b0e459</color>
+</resources>

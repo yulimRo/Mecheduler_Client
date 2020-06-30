@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_back"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:entries="@array/diagnosis"
+            android:text="진료 과목" />
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="155dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/yanolja"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/spinner"
+            android:hint="이름 / 지역" />
+
+
+        <!--            android:id="@+id/ib"-->
+        <ImageButton
+            android:id="@+id/searchbtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/editSearch"
+            android:background="@drawable/web" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:divider="#999999"
+        android:dividerHeight="1dp">
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/searchresult"
+        android:textColor="@color/colorAccent"
+        android:text=" ' 한림대학교성심병원 ' 검색결과 입니다."
+        android:layout_gravity="center"
+        android:fontFamily="@font/yanolja"
+        android:textSize="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/boxMap"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_my"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/mylocation"/>
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    </RelativeLayout>
+
+</LinearLayout>

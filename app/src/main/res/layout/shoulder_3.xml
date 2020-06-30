@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/toolbar"
+                android:background="@android:color/black" />
+
+            <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="30dp"
+                    android:text="어깨 통증" />
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/edit_round_main"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="증상"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="어깨가 아파서 옷입기가 힘들어요. "
+                android:textSize="15dp"
+                android:layout_margin="5dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="브래지어 끈 채우기도 어렵고 화장실에서 뒤처리를 하기도 어렵습니다."
+                android:textSize="15dp"
+                android:lineHeight="25dp"
+                android:layout_margin="5dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="예상원인"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            android:lineHeight="30dp"
+            android:text="환자분이 호소 하는 증상 자체만 본다면 흔히 알려진 오십견 (동결견, 유착성관절낭염)일 가능성이 큽니다. 하지만 유사한 증상을 가진 어깨 질환은 많으며, 목에서 비롯된 통증일 가능성도 있기 때문에 정확한 검사가 필요합니다. "
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주의 사항"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            android:lineHeight="30dp"
+            android:text="오십견이 확인 되면 증상 정도에 따라 개별 맞춤 치료를 하는 것이 중요합니다. 특별한 치료를 하지 않아도 열심히 운동하면 1~2년 전후로 자연 치유 되는 질환이지만 긴시간 삶의 질이 떨어지므로 적절한 치료를 받는 것이 좋습니다. 또한 당뇨가 있는 환자의 경우 증상이 더 쉽게 악화되고 회복이 안 되는 경우도 많아 조심해야 합니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="감별 진단"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shoulder_2" />
+    </LinearLayout>
+</ScrollView>

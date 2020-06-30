@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/toolbar"
+                android:background="@android:color/black" />
+
+            <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="35dp"
+                    android:text="목 통증" />
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아픈 증상을 선택해주세요"
+                android:fontFamily="@font/yanolja"
+                android:textSize="35dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"/>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/click"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:src="@drawable/sickcheck"/>
+
+            <Button
+                android:id="@+id/neck_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:fontFamily="@font/yanolja"
+                android:lineHeight="40dp"
+                android:gravity="left"
+                android:text="며칠 전에 잠을 잘못 잤는지 담 걸린 것 같아요. 통증 때문에 목을 움직이기 힘들어요"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:src="@drawable/sickcheck"/>
+
+            <Button
+                android:id="@+id/neck_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:fontFamily="@font/yanolja"
+                android:lineHeight="40dp"
+                android:gravity="left"
+                android:text="항상 승모근 부위가 불편하고 날개뼈 사이에 통증이 있어요"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:src="@drawable/sickcheck"/>
+
+            <Button
+                android:id="@+id/neck_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:fontFamily="@font/yanolja"
+                android:lineHeight="40dp"
+                android:gravity="left"
+                android:text="목보다 어깨/팔/손이 이따금씩 저리고 아파요. 근육통같이 팔이 아픈것도 같아요"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:src="@drawable/sickcheck"/>
+
+            <Button
+                android:id="@+id/neck_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:fontFamily="@font/yanolja"
+                android:lineHeight="40dp"
+                android:gravity="left"
+                android:text="뒷목 아래의 척추랑 날개뼈 사이로 기분 나쁜 통증이 타고 내려갑니다."
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

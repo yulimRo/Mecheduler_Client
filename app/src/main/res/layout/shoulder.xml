@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/toolbar"
+                android:background="@android:color/black" />
+
+            <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="35dp"
+                    android:text="어깨 통증" />
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아픈 증상을 선택해주세요"
+                android:fontFamily="@font/yanolja"
+                android:textSize="35dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"/>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/click"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:src="@drawable/sickcheck"/>
+
+            <Button
+                android:id="@+id/shoulder_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:fontFamily="@font/yanolja"
+                android:lineHeight="40dp"
+                android:gravity="left"
+                android:text="가만히 있을 때도 어깨가 욱신거리고 힘주면 더 아파요, 밤에 특히 아프고 통증 때문에 아픈 곳을 밑으로 해서 자기 어렵습니다."
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/sickcheck"/>
+            <Button
+                android:id="@+id/shoulder_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:lineHeight="40dp"
+                android:gravity="left"
+                android:fontFamily="@font/yanolja"
+                android:text="이상하게 특정 각도에서, 특히 몸 뒤쪽에 있는 물건을 집으려고 손을 뻗을 때 뜨끔하는 통증이 있어요"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/sickcheck"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/shoulder_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineHeight="40dp"
+                    android:fontFamily="@font/yanolja"
+                    android:background="#00ff0000"
+                    android:gravity="left"
+                    android:text="어깨가 아파서 옷입기가 힘들어요. 브래지어 끈 채우기도 어렵고 화장실에서 뒤처리를 하기도 어렵습니다."
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

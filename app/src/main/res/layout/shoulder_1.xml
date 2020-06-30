@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/toolbar"
+                android:background="@android:color/black" />
+
+            <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="30dp"
+                    android:text="어깨 통증" />
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/edit_round_main"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="증상"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="가만히 있을 때도 어깨가 욱신거리고 힘주면 더 아파요"
+                android:textSize="15dp"
+                android:layout_margin="5dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="밤에 특히 아프고 통증 때문에 아픈 곳을 밑으로 해서 자기 어렵습니다."
+                android:textSize="15dp"
+                android:layout_margin="5dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="예상원인"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            android:lineHeight="30dp"
+            android:text="어깨 관절은 우리 몸에서 가동범위가 가장 큰 관절입니다. 다양한 회전 운동이 가능하도록 어깨뼈는 떠 있는 형태로 존재하고 이 어깨뼈를 제자리에 고정하기 위해 회전근개라고 불리는 4개의 근육이 단단히 잡아줍니다. 어깨 통증 원인은 단순 근육통 부터 회전근개 파열까지 매우 다양합니다. 정확한 진단이 선행되어야 제대로 치료를 할 수 있습니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주의 사항"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            android:lineHeight="30dp"
+            android:text="가장 대표적인 질환은 회전근개 손상, 견봉하 윤활낭염, 석회성 힘줄염 등이며, 회전근개 손상이 있는 경우 윤활낭염이 동반되는 경우도 많습니다. 손상부위와 정도를 정확히 진단하여, 원인이 되는 부위에 인대강화주사, 신경염증치료, 충격파치료 등 맞춤 치료를 하는 것이 중요합니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="감별 진단"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="유착성관절낭염(오십견), 삼각근하점액낭염(윤활낭염), 석회성 힘줄염, 회전근개파열, 어깨충돌증후군"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shoulder_1" />
+    </LinearLayout>
+</ScrollView>

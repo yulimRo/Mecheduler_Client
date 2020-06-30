@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/edit_round"
+            android:layout_margin="7dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="메케줄러"
+                    android:fontFamily="@font/yanolja"
+                    android:textColor="#000000"
+                    android:textSize="55dp" />
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/mainlogo"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/findidimg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/yanolja"
+                    android:gravity="center"
+                    android:text="ID 찾기"
+                    android:textColor="#000000"
+                    android:textSize="30dp"/>
+
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:columnCount="2"
+                android:gravity="center"
+                android:rowCount="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:text="이름" />
+
+                <EditText
+                    android:id="@+id/findIDName"
+                    android:layout_width="209dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/yanolja"
+                    android:gravity="center"
+                    android:hint="이름"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:text="핸드폰 번호" />
+
+                <EditText
+                    android:id="@+id/find_id_tel"
+                    android:layout_width="145dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/yanolja"
+                    android:gravity="center"
+                    android:hint="( - ) 생략 "
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/sendForId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_row="1"
+                    android:text="인증번호 확인"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/yanolja"
+                    android:textColor="#ffffff"
+                    android:padding="10dp"
+                    android:background="@drawable/edit_round_main_full"
+                    android:layout_column="1"/>
+
+                <EditText
+                    android:id="@+id/verifyId"
+                    android:layout_width="150dp"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="20dp"
+                    android:hint="인증코드" />
+
+
+            </GridLayout>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/find_id_btn"
+                    android:textColor="#000000"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_round_main"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="20dp"
+                    android:text="아이디 찾기"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_margin="20dp"
+                android:background="@color/colorAccent"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/findpwdimg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/yanolja"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:text="비밀번호 찾기"/>
+        </LinearLayout>
+
+            <GridLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:columnCount="2"
+                android:fontFamily="@font/yanolja"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:rowCount="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:text="아이디" />
+
+                <EditText
+                    android:layout_width="209dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/findPwdID"
+                    android:gravity="center"
+                    android:hint="아이디" />
+
+                <TextView
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:text="핸드폰 번호" />
+
+                <EditText
+                    android:layout_width="145dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:id="@+id/findPWDTel"
+                    android:hint="( - ) 생략 " />
+
+                <Button
+                    android:id="@+id/sendForPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_row="1"
+                    android:text="인증번호 확인"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/yanolja"
+                    android:textColor="#ffffff"
+                    android:padding="10dp"
+                    android:background="@drawable/edit_round_main_full"
+                    android:layout_column="1"/>
+
+                <EditText
+                    android:id="@+id/verifyPwd"
+                    android:layout_width="150dp"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="20dp"
+                    android:hint="인증코드" />
+
+
+            </GridLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/findPwdBtn"
+                    android:layout_width="200dp"
+                    android:background="@drawable/edit_round_main"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/yanolja"
+                    android:textSize="20dp"
+
+                    android:text="비밀번호 찾기"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yanolja"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:id="@+id/goToLoginPage"
+                android:text=" 로그인 / 회원 가입"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

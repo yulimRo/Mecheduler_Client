@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="370dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@android:color/black" />
+
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="예약 취소 안내" />
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="해당 예약 진료를 취소하시겠습니까?"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_schedule1"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="40dp"
+            android:text="진료 날짜"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_schedule1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/text1"
+            android:text="2020/01/01"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="30dp"
+            android:text="병원"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/text1"
+            android:text="드림의원"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="30dp"
+            android:text="진료 과목"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/text1"
+            android:text="일반 질병"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text3"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="30dp"
+            android:text="담당의"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/text1"
+            android:text="손종건 원장님"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/text4"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_no"
+            android:background="#00ff0000"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="아니요" />
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_toRightOf="@+id/btn_no"
+            android:background="#00ff0000"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="예" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@android:color/black" />
+
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="자가 진단" />
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <ImageButton
+            android:id="@+id/btn_head"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/head"
+            android:onClick="onClick_head"/>
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_head"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="#00ff0000"
+            android:text="머리 / 얼굴 통증"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:onClick="onClick_head"/>
+
+        <ImageButton
+            android:id="@+id/btn_neck"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/btn_head"
+            android:background="@drawable/neck"
+            android:onClick="onClick_neck"/>
+
+        <TextView
+            android:id="@+id/tv_neck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_neck"
+            android:layout_toRightOf="@+id/tv_head"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="17dp"
+            android:background="#00ff0000"
+            android:text="머리 / 얼굴 통증"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:onClick="onClick_neck"/>
+
+        <ImageButton
+            android:id="@+id/btn_shoulder"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/btn_neck"
+            android:background="@drawable/shoulder"
+            android:onClick="onClick_shoulder"/>
+
+        <TextView
+            android:id="@+id/tv_shoulder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_head"
+            android:layout_toRightOf="@+id/tv_neck"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+            android:background="#00ff0000"
+            android:text="어깨 통증"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:onClick="onClick_shoulder"/>
+
+        <ImageButton
+            android:id="@+id/btn_body"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/tv_head"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/belly"
+            android:onClick="onClick_body"/>
+
+        <TextView
+            android:id="@+id/tv_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_body"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="52dp"
+            android:background="#00ff0000"
+            android:text="몸 통증"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:onClick="onClick_body"/>
+
+        <ImageButton
+            android:id="@+id/btn_waist"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/tv_neck"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/btn_body"
+            android:background="@drawable/waist"
+            android:onClick="onClick_waist"/>
+
+        <TextView
+            android:id="@+id/tv_waist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_waist"
+            android:layout_toRightOf="@+id/btn_body"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="23dp"
+            android:background="#00ff0000"
+            android:text="허리 / 골반 통증"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:onClick="onClick_waist"/>
+
+        <ImageButton
+            android:id="@+id/btn_knee"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/btn_waist"
+            android:layout_below="@+id/tv_shoulder"
+            android:background="@drawable/knee"
+            android:onClick="onClick_knee"/>
+
+        <TextView
+            android:id="@+id/tv_knee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_waist"
+            android:layout_toRightOf="@+id/btn_waist"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="32dp"
+            android:background="#00ff0000"
+            android:text="무릎 / 발 통증"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:onClick="onClick_knee"/>
+
+        <ImageButton
+            android:id="@+id/btn_wrist"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/tv_body"
+            android:background="@drawable/wrist"
+            android:onClick="onClick_wrist"/>
+
+        <TextView
+            android:id="@+id/tv_wrist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_wrist"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:background="#00ff0000"
+            android:text="팔꿈치 / 손목 /\n       손 통증"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:onClick="onClick_wrist"/>
+
+        <ImageButton
+            android:id="@+id/btn_more"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/btn_wrist"
+            android:layout_below="@+id/tv_body"
+            android:background="@drawable/more"
+            android:onClick="onClick_more"/>
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_wrist"
+            android:layout_toRightOf="@id/tv_wrist"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+            android:background="#00ff0000"
+            android:text="기타 통증"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:onClick="onClick_more"/>
+    </RelativeLayout>
+</LinearLayout>

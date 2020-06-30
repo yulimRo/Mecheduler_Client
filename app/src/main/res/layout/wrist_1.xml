@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/toolbar"
+                android:background="@android:color/black" />
+
+            <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="팔꿈치 / 손목 / 손 통증 통증" />
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="1. 팔꿈치 뼈있는 부위가 아파요. 무거운 것을 들면 더 아파요"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="예상원인"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="팔꿈치 뼈있는 부위를 눌러 아프다면 가장 우선적으로 외측 또는 내측 상과염을 생각해볼 수 있습니다. 테니스 엘보우 혹은 골퍼 엘보우라는 별명을 가지고 있으나 실제로는 운동선수보다는 가정주부나 식당일을 하시는 분들이 더 자주 걸리는 흔한 질환입니다. "
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="손목을 움직이는 많은 근육들이 팔꿈치 뼈 한곳에 집중해서 붙어 있기 때문에 근육 사용이 과도하게 많거나 근육의 질이 나빠져 제대로 충격흡수를 하지 못하면 충격이 근 부착부로 전달되어 부착부 힘줄염이 발생하고 통증도 생깁니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="주의 사항"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="재발이 많은 질환이기 때문에 증상과 사용정도에 맞춰 세심한 치료계획을 세워야 합니다. 섣불리 스테로이드 주사를 자주 맞게 되면 3개월 이내에 쉽게 재발하게 되고 치료가 더 어려워 질 수도 있습니다. 드물게는 관절의 문제나 측부인대의 문제가 유사한 증상을 유발하기도 하고, 목에서 비롯된 신경 증상 혹은 팔꿈치 부근에 신경 포착증후군도 유사한 증상을 유발할 수 있습니다. 때문에 초음파를 통해 이러한 질환을 배제하는 것이 중요합니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="초기에는 별것 아니라고 생각하고 방치하다가 만성화 되어, 생각외로 치료기간이 길어지는 경우가 많으므로 처음부터 정확한 팔 관리법을 배우고 치료 받으시는 것이 중요합니다."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="감별 진단"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="테니스 엘보 / 골퍼 엘보, 경추간판탈출증(목디스크), 척골신경포착증후군, 요골신경포착증후군, 석회성 힘줄염"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/wrist_1" />
+    </LinearLayout>
+</ScrollView>

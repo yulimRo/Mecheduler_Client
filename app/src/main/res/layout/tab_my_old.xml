@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="apfhd"/>
+    </LinearLayout>
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/my_recycler_view3"-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="12.5dp"-->
+<!--            android:layout_toLeftOf="@+id/im_schedule3"-->
+<!--            android:text="진료 일정 보기"-->
+<!--            android:textSize="20dp" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/im_schedule3"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:background="#00ff0000"-->
+<!--            android:src="@drawable/schedule" />-->
+<!--    </RelativeLayout>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:text="관심 병원"-->
+<!--        android:textSize="25dp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:src="@drawable/dot" />-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="onClick_hospital">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="드림의원"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/text1"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text="사랑시 고백구 행복동 1004"-->
+<!--                android:textSize="17dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/text2"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text="031-111-2222"-->
+<!--                android:textSize="17dp" />-->
+
+<!--            <ImageButton-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_below="@+id/text2"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_toRightOf="@+id/text3"-->
+<!--                android:background="@drawable/call" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/text3"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text="목, 금 휴무"-->
+<!--                android:textSize="17dp" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginLeft="40dp"-->
+<!--                android:layout_marginTop="60dp"-->
+<!--                android:layout_toRightOf="@+id/text2"-->
+<!--                android:src="@drawable/arrow" />-->
+<!--        </RelativeLayout>-->
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:text="관심 약국"-->
+<!--        android:textSize="25dp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:src="@drawable/dot" />-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="onClick_pharmacy">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="드림의원"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text5"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/text4"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text="사랑시 고백구 행복동 1004"-->
+<!--                android:textSize="17dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text6"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/text5"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text="031-111-2222"-->
+<!--                android:textSize="17dp" />-->
+
+<!--            <ImageButton-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_below="@+id/text5"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_toRightOf="@+id/text6"-->
+<!--                android:background="@drawable/call" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/text6"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text="목, 금 휴무"-->
+<!--                android:textSize="17dp" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginLeft="40dp"-->
+<!--                android:layout_marginTop="60dp"-->
+<!--                android:layout_toRightOf="@+id/text5"-->
+<!--                android:src="@drawable/arrow" />-->
+<!--        </RelativeLayout>-->
+<!--    </LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_round_main"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/hospital"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/hospital" />
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/yanolja"
+                    android:textColor="#000000"
+                    android:text="병원이름"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/yanolja"
+                    android:textColor="#000000"
+                    android:text="병원주소"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/yanolja"
+                    android:textColor="#000000"
+                    android:text="병원전화번호"
+                    android:textSize="20dp" />
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/telhp"
+                    android:layout_below="@+id/text2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/text3"
+                    android:background="@drawable/call" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/yanolja"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/info"
+            android:textSize="20dp"
+            android:text="병원정보보러가기"/>
+    </LinearLayout>
+
+</LinearLayout>
